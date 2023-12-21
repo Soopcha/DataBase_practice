@@ -1,0 +1,47 @@
+<html>
+<head
+
+
+<!-- Подключаемые из локального каталога файлы с описаниями классов и пр. -->
+    <script type="text/javascript" src="love.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	<!-- C:/study/university/programming/database/практика 2/script.js"
+		C:/study/university/programming/database/практика 2/love.js-->
+
+<!-- Подключение jquery по общедоступной ссылке, можете перейти - посмотреть на
+сжатый донельзя код фреймворка -->
+    <script type="text/javascript">// Скрипт, выполняемый при загрузке страницы
+        // Он прячет элементы, которые будут отображать данные из базы
+        $(document).ready(function() {
+		$('#search_button').hide();
+        $("#Vrach").hide();
+   $('.error_message').hide();
+  });</script>
+<!-- Подключение стилей из внешнего файла -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<!-- Блок с текстом ошибки -->
+	<div class='error_message'>Not found</div>
+	<!-- Таблица с идентификатором, при помощи которого к ней будет
+	обращаться код, использующий jQuery -->
+	<table id='Vrach'>
+		<tr>
+			<th>ID</th>
+			<th>Опыт</th>
+			<th>Квалификация</th>
+
+		</tr>
+	</table>
+
+	<!-- Скрипт, в котором можно будет настроить реакцию на какое-либо
+	событие элемента страницы: нажатие кнопки, изменение текстового поля и пр. -->
+	<script type="text/javascript"></script>
+
+</body>
+
+
+</html>
